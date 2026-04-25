@@ -1,6 +1,6 @@
 app-id: io.github.mcthesw.easy-nats
 runtime: org.freedesktop.Platform
-runtime-version: "25.08"
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
@@ -16,7 +16,7 @@ build-options:
   prepend-ld-library-path: /usr/lib/sdk/rust-stable/lib
   env:
     CARGO_HOME: /run/build/easy-nats/cargo
-    CARGO_NET_OFFLINE: "true"
+    CARGO_NET_OFFLINE: 'true'
 modules:
   - name: easy-nats
     buildsystem: simple
@@ -24,13 +24,14 @@ modules:
       - cargo --offline build --release -p easy-nats
       - install -Dm755 target/release/easy-nats /app/bin/easy-nats
       - install -Dm644 packaging/flatpak/io.github.mcthesw.easy-nats.desktop /app/share/applications/io.github.mcthesw.easy-nats.desktop
-      - install -Dm644 packaging/flatpak/io.github.mcthesw.easy-nats.metainfo.xml /app/share/metainfo/io.github.mcthesw.easy-nats.metainfo.xml
+      - install -Dm644 packaging/flatpak/io.github.mcthesw.easy-nats.metainfo.xml
+        /app/share/metainfo/io.github.mcthesw.easy-nats.metainfo.xml
       - install -Dm644 packaging/icon.png /app/share/icons/hicolor/512x512/apps/io.github.mcthesw.easy-nats.png
       - install -Dm644 LICENSE /app/share/licenses/io.github.mcthesw.easy-nats/LICENSE
     sources:
       - type: archive
-        url: https://github.com/mcthesw/easy-nats/archive/refs/tags/v0.1.9.tar.gz
-        sha256: 95690063f626cf0803a4561fb7e4bff44298c879c923da28fab2f1c09de4c54d
+        url: https://github.com/mcthesw/easy-nats/archive/refs/tags/v0.1.12.tar.gz
+        sha256: 455a4f26185c1c6b017e76549e48591a12193e59b4afdad1c33a04f4fc40f051
         x-checker-data:
           type: json
           url: https://api.github.com/repos/mcthesw/easy-nats/releases/latest
