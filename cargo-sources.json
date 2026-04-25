@@ -1,8 +1,9 @@
 [
     {
-        "type": "git",
-        "url": "https://github.com/mcthesw/egui_dock",
-        "commit": "5dfa88feb4dddbc26eda0c0a5b469182816cb2ce",
+        "type": "archive",
+        "archive-type": "tar-gzip",
+        "url": "https://codeload.github.com/mcthesw/egui_dock/tar.gz/5dfa88feb4dddbc26eda0c0a5b469182816cb2ce",
+        "sha256": "9e3abb1818d23d6e63994c36fe359859c7bc271d38c4d66d9247bf71236832f3",
         "dest": "flatpak-cargo/git/egui_dock-5dfa88f"
     },
     {
