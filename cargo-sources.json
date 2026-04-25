@@ -1335,7 +1335,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git\\egui_dock-5dfa88f\\.\" \"cargo/vendor/egui_dock\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/egui_dock-5dfa88f/.\" \"cargo/vendor/egui_dock\""
         ]
     },
     {
