@@ -30,8 +30,8 @@ modules:
       - install -Dm644 LICENSE /app/share/licenses/io.github.mcthesw.easy-nats/LICENSE
     sources:
       - type: archive
-        url: https://github.com/mcthesw/easy-nats/archive/refs/tags/v0.1.20.tar.gz
-        sha256: caba21e1fbb86dc598e747c691a60b0f05d3f1902aa15f8442c3477e6518bbbc
+        url: https://github.com/mcthesw/easy-nats/archive/refs/tags/v0.1.21.tar.gz
+        sha256: a6b42e7691642d5c1c6ee6068fe43ce57e99025ab8146a9c7d664519e0977a17
         x-checker-data:
           type: json
           url: https://api.github.com/repos/mcthesw/easy-nats/releases/latest
